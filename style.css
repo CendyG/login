@@ -1,0 +1,309 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F9F9F9;
+  overflow-x: hidden;
+  min-height: 100vh; 
+  position: relative; /* Set the body to relative positioning */
+}
+nav {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: 700;
+}
+
+/*  Drop down list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+li {
+  display: inline-block;
+  position: relative;
+ 
+}
+
+
+.dropdown ul li a {
+  display: block;
+}
+
+
+ul li ul.dropdown {
+  position: absolute;
+  z-index: 999;
+  display: none;
+  top: calc(100% + 2px);
+  padding: 10px;
+  left: 0;
+}
+
+
+ul li:hover ul.dropdown {
+  display: block;
+}
+
+
+ul li ul.dropdown li {
+  display: block;
+}
+
+
+.dropdown-btn {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(31, 53, 61, 1);
+}
+.dropdown{
+  background-color: white;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+
+nav a,
+.dropdown-btn {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+nav a img {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+
+nav a:hover,
+.dropdown-btn:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.login-btn {
+  border-radius: 60px;
+  background-color: white;
+  color: #548bab;
+  border: 1px solid #548bab;
+  padding: 14px 20px;
+  margin: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  width: 150px;
+  height: 47px;
+}
+
+
+.register-btn {
+  border-radius: 60px;
+  background-color: #548bab;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  margin: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+  width: 160px;
+  height: 47px;
+}
+/* ---------------------- */
+.login-header {
+  color: black; /* White text color */
+  padding: 20px; /* Add padding for spacing */
+  font-family: 'Montserrat';
+  font-weight: 600;
+  line-height: 48px;
+
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .login-header {
+      padding: 10px; /* Decrease padding for smaller screens */
+      font-size: 18px; /* Decrease font size for smaller screens */
+  }
+}
+.email {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  top: 278px;
+  left: 538px;
+  right: 786px;
+  text-align: a;
+}
+
+
+.inputEmail {
+  border-radius: 12px;
+  border: 1px solid #AEAEAA;
+  width: 363px;
+  height: 40px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #595959;
+}
+/* ------------------------------------ */
+.welcome {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+}
+.emailAdd {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+.inputEmail {
+  border-radius: 12px;
+  border: 1px solid #AEAEAA;
+  width: 363px;
+  height: 40px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #595959;
+}
+
+
+/* ------------------------------------ */
+
+.email, .password{
+  margin-bottom: 10px;
+}
+.registerPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.login-button{
+  border-radius: 50px;
+  width: 407px;
+  height: 60px;
+  background-color: #548BAB;
+  margin-top: 42px;
+  margin-bottom: 50px;
+  color: white;
+  font-family: 'Montserrat';
+  size: 18px;
+  border: none;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 700;
+  line-height: 23.4px;
+  top: 506px; 
+  cursor: pointer;
+  margin-right: 1px;
+  align-items: center;
+  
+}
+.pass {
+  position: relative;
+  width: 300px; /* Adjust width as needed */
+}
+
+.input-container {
+  position: relative;
+}
+
+.password, .inputEmail {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.inputPassword, .inputEmail {
+  border-radius: 12px;
+  border: 1px solid #AEAEAA;
+  width: 363px; /* Match the width with the email input field */
+  height: 40px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #595959;
+  padding-right: 40px; /* Adjust padding to accommodate eye icon */
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 20px; /* Adjust right position as needed */
+  transform: translateY(-50%);
+  cursor: pointer; /* Optional: add cursor style for better UX */
+}
+
+.AskingAnAcc {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  width: 412px;
+  margin-top: -31px;
+}
+.loginLink {
+  color: #548BAB;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+.input-container {
+  position: relative;
+}
+
+.forgot-password-link {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  color: #548bab;
+  text-decoration: none;
+  font-size: 14px; /* Adjust as needed */
+  text-align: right;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0px;
+  font-family: 'Montserrat';
+}
+
+.forgot-password-link:hover {
+  text-decoration: underline; 
+}
+
